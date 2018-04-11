@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndicatorLayout">
+        <attr name="pointWidth" format="dimension" />
+        <attr name="pointMargin" format="dimension" />
+    </declare-styleable>
+</resources>
