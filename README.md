@@ -21,4 +21,4 @@ allprojects {
 
 使用：
 
-界面初始化调用indicator.attachTo(viewPager)方法将其关联，数据刷新时调用indicator.refresh()即可
+界面初始化调用 indicator.attachTo(viewPager)   方法将其关联，数据刷新时调用  indicator.refresh() 即可
