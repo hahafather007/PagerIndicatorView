@@ -7,7 +7,7 @@ import android.view.Gravity
 import android.view.View
 import android.widget.LinearLayout
 
-class ImageIndicatorLayout : LinearLayout, ViewPager.OnPageChangeListener {
+class PagerIndicatorView : LinearLayout, ViewPager.OnPageChangeListener {
     private var views = emptyList<View>()
     private var pager: ViewPager? = null
 
