@@ -31,3 +31,26 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+apply plugin: 'maven'
+
+ext {
+    // 从Github上clone下来的项目的本地地址
+    GITHUB_REPO_PATH = "/Users/chengpengxiang/Android/Open"
+    // compile 'com.audienl:super_library:1.0.0'
+    PUBLISH_GROUP_ID = 'haha.father007'
+    PUBLISH_ARTIFACT_ID = 'pager-indicator'
+    PUBLISH_VERSION = '0.0.1'
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        def deployPath = file(project.GITHUB_REPO_PATH)
+        repository(url: "file://${deployPath.absolutePath}")
+        pom.project {
+            groupId project.PUBLISH_GROUP_ID
+            artifactId project.PUBLISH_ARTIFACT_ID
+            version project.PUBLISH_VERSION
+        }
+    }
+}
