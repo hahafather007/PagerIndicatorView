@@ -1,6 +1,6 @@
 # PagerIndicatorView
 方便易用的ViewPager指示器
-：
+#导入：
 1、project的.gradle文件添加：
 allprojects {
     repositories {
