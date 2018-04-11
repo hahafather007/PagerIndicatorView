@@ -1,5 +1,6 @@
 # PagerIndicatorView
 方便易用的ViewPager指示器
+
 导入：
 
 1、project的.gradle文件添加：
@@ -18,3 +19,6 @@ allprojects {
 
     implementation 'haha.father007:pager-indicator:0.0.1'
 
+使用：
+
+界面初始化调用indicator.attachTo(viewPager)方法将其关联，数据刷新时调用indicator.refresh()即可
