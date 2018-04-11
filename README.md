@@ -5,13 +5,9 @@
 1、project的.gradle文件添加：
 
 allprojects {
-
     repositories {
-	
         maven { url "https://raw.githubusercontent.com/hahafather007/openProjects/master" }
-		
     }
-	
 }
 
 2.app的.gradle添加：
